@@ -1,0 +1,207 @@
+/* ---------- Base ---------- */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
+  background: #f1f5f9;
+  color: #0f172a;
+}
+
+main {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 1.5rem 1rem;
+}
+
+h1 {
+  margin-top: 0;
+}
+
+/* ---------- Header y Footer ---------- */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  padding: 1rem 2rem;
+  background: #1e293b;
+  color: white;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 1.4rem;
+}
+
+nav a {
+  color: #cbd5e1;
+  text-decoration: none;
+  margin-left: 1rem;
+  padding-bottom: 2px;
+}
+
+nav a:hover {
+  color: white;
+}
+
+nav a.active {
+  color: white;
+  font-weight: bold;
+  border-bottom: 2px solid #38bdf8;
+}
+
+footer {
+  text-align: center;
+  padding: 1rem;
+  color: #64748b;
+}
+
+/* ---------- Botones y formularios ---------- */
+button,
+.boton-grande {
+  cursor: pointer;
+  border: none;
+  border-radius: 6px;
+  background: #2563eb;
+  color: white;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  text-decoration: none;
+}
+
+button:hover,
+.boton-grande:hover {
+  background: #1d4ed8;
+}
+
+button.peligro {
+  background: #dc2626;
+}
+
+button.peligro:hover {
+  background: #b91c1c;
+}
+
+select,
+input {
+  padding: 0.4rem;
+  border: 1px solid #cbd5e1;
+  border-radius: 6px;
+  font-size: 1rem;
+}
+
+label {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+/* ---------- Home ---------- */
+.hero {
+  text-align: center;
+  padding: 3rem 1rem;
+}
+
+.boton-grande {
+  display: inline-block;
+  padding: 0.9rem 1.8rem;
+  font-size: 1.2rem;
+  margin-top: 1rem;
+}
+
+/* ---------- Productos (grilla de tarjetas) ---------- */
+.grilla {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(210px, 1fr));
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.grilla article {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.4rem;
+  text-align: center;
+  padding: 1rem;
+  background: white;
+  border: 1px solid #e2e8f0;
+  border-radius: 10px;
+}
+
+.grilla img {
+  width: 100%;
+  height: 140px;
+  object-fit: contain;
+}
+
+.grilla h3,
+.grilla p {
+  margin: 0;
+}
+
+/* ---------- Detalle de producto ---------- */
+.detalle {
+  max-width: 560px;
+  margin: 0 auto;
+  background: white;
+  padding: 1.5rem;
+  border-radius: 10px;
+  border: 1px solid #e2e8f0;
+}
+
+.detalle img {
+  width: 100%;
+  max-height: 260px;
+  object-fit: contain;
+}
+
+.detalle a {
+  display: inline-block;
+  margin-left: 1rem;
+}
+
+/* ---------- Carrito ---------- */
+.carrito article {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem;
+  margin-bottom: 0.75rem;
+  background: white;
+  border: 1px solid #e2e8f0;
+  border-radius: 10px;
+}
+
+.carrito article h3,
+.carrito article p {
+  margin: 0;
+}
+
+.carrito article h3 {
+  flex: 1;
+  min-width: 150px;
+}
+
+.carrito img {
+  width: 80px;
+  height: 80px;
+  object-fit: contain;
+}
+
+.carrito input[type="number"] {
+  width: 70px;
+}
+
+.carrito h2 {
+  text-align: right;
+}
+
+.carrito > button {
+  margin-right: 0.5rem;
+}
