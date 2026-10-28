@@ -1,32 +1,20 @@
-# React + TypeScript + Vite
+# Kiosco Don Julio
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+Mini-app de un kiosco: catálogo de productos, filtro por categoría, detalle de producto,
+carrito y pedido. Hecha con React + TypeScript + Vite + react-router-dom.
 
-Currently, two official plugins are available:
+## Rutas
+- `/` inicio
+- `/products` catálogo (filtro por categoría con `?category=`)
+- `/products/:id` detalle de producto
+- `/cart` carrito
+- cualquier otra ruta muestra la página 404
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## Requisitos
+- Node.js (versión LTS)
 
-## React Compiler
+## Instalar y correr
+npm install
+npm run dev
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
-
-## Expanding the Oxlint configuration
-
-If you are developing a production application, we recommend enabling type-aware lint rules by installing `oxlint-tsgolint` and editing `.oxlintrc.json`:
-
-```json
-{
-  "$schema": "./node_modules/oxlint/configuration_schema.json",
-  "plugins": ["react", "typescript", "oxc"],
-  "options": {
-    "typeAware": true
-  },
-  "rules": {
-    "react/rules-of-hooks": "error",
-    "react/only-export-components": ["warn", { "allowConstantExport": true }]
-  }
-}
-```
-
-See the [Oxlint rules documentation](https://oxc.rs/docs/guide/usage/linter/rules) for the full list of rules and categories.
+Abrir la URL que muestra la terminal.
